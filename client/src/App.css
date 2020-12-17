@@ -1,38 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300;400&display=swap');
+
+/*
+--------------------
+PALETA DE COLORES
+--------------------
+amarilo => #FFD86B
+rojo=> #EB776A
+violeta => #9E4FFF
+azul => #8BD7E8
+verde => #C2FEB4 
+
+*/
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:#9E4FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.home-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
   flex-direction: column;
-  align-items: center;
+  height: 800px;
+}
+
+.welcome{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #8BD7E8;
+  font-family: 'Langar', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-2{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background:#8BD7E8;
+  color: #9E4FFF;
+  padding: 10px;
+  font-family: 'Langar', cursive;
+  border-radius: 10px 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.navBar{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#8BD7E8;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.logo{
+  font-family: 'Langar', cursive;
+  font-size: 25px;
+  font-weight: 800;
+  color: #8BD7E8;
+  background-color: #9E4FFF;
+  padding: 10px;
+  border-radius: 10px 10px 0px;
+  margin: 15px;
+  -moz-box-shadow:    inset 0 0 5px#6627b4;
+  -webkit-box-shadow: inset 0 0 5px#6627b4;
+  box-shadow:         inset 1px 1px 10px #6627b4;
+}
+
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 600px) {
+  .home-container {
+    height: 500px;
   }
 }
