@@ -1,0 +1,1 @@
+export const SET_SIGNUP_DISPLAY = 'SET_SIGNUP_DISPLAY';
