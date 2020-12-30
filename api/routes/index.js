@@ -1,8 +1,5 @@
 const { Router } = require('express');
-
-const exampleRoute = require('./exampleRoute.js')
-
-
+const exampleRoute = require('./exampleRoute.js');
 const router = Router();
 
 router.use('/example', exampleRoute);
